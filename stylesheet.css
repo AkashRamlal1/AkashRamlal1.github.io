@@ -47,7 +47,20 @@ a{
   align-items: center;
   position: relative;
   gap: 10px;
+  position: relative;
 }
+#box1::after{
+  content: "";
+  position: absolute;
+  background: url('./hero-image-akash.jpeg');
+  height: 500px;
+  width: 500px;
+  z-index: -1;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  background-position: center top;
+}
+
 
  #radial-me{
   border-radius: 50%; 
@@ -58,6 +71,7 @@ a{
 
 
 }
+
 
 #box1 .hero .button{
 
