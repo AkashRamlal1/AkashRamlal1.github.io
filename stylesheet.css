@@ -19,6 +19,7 @@ font-family: "Roboto Mono", 'Courier New', Courier, monospace;
 width: 100%;
 height: 100%;
 
+
 }
 ul{
   list-style: none;
@@ -45,12 +46,14 @@ footer{
   margin-top: 20%;
   color: #d2d3d3;
   text-align: center;
+  margin-bottom: 10%;
 }
 
 footer h2 {
 
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 3%;
+
 }
 .social-buttons .social{
   transition-duration: 0.25s;
@@ -76,6 +79,7 @@ footer h2 {
   position: relative;
   gap: 10px;
   position: relative;
+  
 }
 #box1::after{
   content: "";
@@ -102,11 +106,13 @@ box-shadow: 0px 5px 15px 5px #505353f0;
   border-radius: 0.3rem;
   padding: 15px 32px;
   background-color: #f0f0f088 ;
+  
 
 }
 #box1 .hero .button:hover{
   
   background-color: #dbdada;
+  
   color: #292929;
   border: none;
   padding: 10px;
@@ -117,6 +123,7 @@ box-shadow: 0px 5px 15px 5px #505353f0;
 
   font-size: 100px;
   padding-bottom: 50px;
+  
 }
 
 
@@ -193,6 +200,98 @@ box-shadow: 0px 5px 15px 5px #505353f0;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  z-index: -1;
   
 }
   
+.dino_cloud a{
+  background-color: #ffffff;
+  border: #121212 solid 2px ;
+  border-radius: 4px;
+  color: rgb(48, 48, 48);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 54%;
+  margin-top: 20vh;
+  z-index: 2;
+  position: absolute;
+  
+}
+
+.about-me-progress{
+
+margin-top: 29%;
+
+}
+.progress-text{
+margin-bottom: 10px;
+
+}
+
+.progressbars{
+  margin-top: 5%;
+  max-width: 50%;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progressbars h3{
+text-align: left;
+margin-top: 6%;
+
+
+}
+.progressBG{
+  
+  background-color: #24242485;
+  color: #202020;
+  border-radius: 3rem;
+ 
+}
+
+.progressHTML{
+
+  background-color: rgb(161, 255, 255) ;
+  background-image: url('hex.png') ;
+  background-size: 260px;
+  background-position: center  ;
+  border-radius: 3rem;
+ 
+  
+}
+
+.progressCSS{
+  background-color: aquamarine;
+  background-image: url('hex.png') ;
+  background-size: 260px;
+  background-position: center  ;
+  border-radius: 3rem;
+}
+.progressPython{
+
+  background-color: #b34343;
+  background-image: url('hex.png') ;
+  background-size: 260px;
+  background-position: center  ;
+  border-radius: 3rem;
+}
+
+.progressPHP{
+
+  background-color: #ffd000;
+  background-image: url('hex.png') ;
+  background-size: 260px;
+  background-position: center  ;
+  border-radius: 3rem;
+}
+
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
