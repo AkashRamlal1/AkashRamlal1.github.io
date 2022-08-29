@@ -3,6 +3,8 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="stylesheet.css">
+  
+  <script src="portfolio-function.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +13,13 @@
 <body>
 
 <header>
-
+  <div class="mobile-nav">
+    <div class="topnav">
+      <a class="active" href="#box1">Home</a>
+      <a href="#about-me">about me</a>
+     
+    </div>
+  </div>
 </header>
 <main>
 <section id="box1">
@@ -30,9 +38,12 @@
 
 <section id="about-me">
   <h1 class="about-me-kop">About me</h1>
+  
+    
+  
   <div class="about-me-block1">
     <h2 class="about-me-kop">wie ben ik</h2>
-    <p>Mijn naam is Akash Ramlal ik ben een eerste jaars niveau 4 software development student op het Da Vinci College in dordrecht </p>
+    <p>Mijn naam is Akash Ramlal ik ben een tweede jaars niveau 4 software development student op het Da Vinci College in dordrecht </p>
 
     
     
@@ -52,44 +63,30 @@
 
   <div class="about-me-progress">
 
+   
+
     <div class="progress-text">
     <h2>programeertaal kennis</h2>
+   
     <br>
     <p>dit zijn alle talen die ik beheers en ervaring mee heb</p>
+    <br>
+    
+    <button class="probutton button1" id="htmlbar" onclick="htmlbar()">HTML</button>
+    <button class="probutton button1" id="cssbar" onclick="cssbar()">CSS</button>
+    
+    <button class="probutton button1" id="phpbar" onclick="phpbar()">PHP</button>
+    <button class="probutton button1" id="javascript" onclick="javascriptbar()">Javascript</button>
+    <button class="probutton button1" id="phpbar" onclick="pythonbar()">Python</button>
+  <br>
     </div>
 
     <div class="progressbars">
-      <h3>HTML</h3>
+      <h3 id="progress-title"></h3>
       <br>
       <div class="progressBG">
         
-        <div class="progressHTML" style="width:65%">65%</div>
-      </div>
-    </div>
-    <div class="progressbars">
-      <h3>CSS</h3>
-      <br>
-      <div class="progressBG">
-        
-        <div class="progressCSS" style="width:55%">55%</div>
-      </div>
-    </div>
-
-    <div class="progressbars">
-      <h3>Python</h3>
-      <br>
-      <div class="progressBG">
-        
-        <div class="progressPython" style="width:60%">60%</div>
-      </div>
-    </div>
-
-    <div class="progressbars">
-      <h3>PHP</h3>
-      <br>
-      <div class="progressBG">
-        
-        <div class="progressPHP" style="width:30%">30%</div>
+        <div class="progressnumb" id="progresscolour"style="width:65%">65%</div>
       </div>
     </div>
 
@@ -119,6 +116,108 @@
 </main>
 <footer>
 <h2>contact</h2>
+<div class="logo" >
+  <a href="#box1">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 523 524" style="enable-background:new 0 0 523 524;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st3{stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g id="Laag_5">
+	<g>
+		<polygon class="st0" points="172.84,419.03 91.97,278.04 173.63,137.52 336.16,137.97 417.03,278.96 335.37,419.48 		"/>
+		<path class="st0" d="M173.92,138.02l161.95,0.45l80.58,140.48l-81.37,140.03l-161.95-0.45L92.55,278.05L173.92,138.02
+			 M173.34,137.02L91.39,278.04l81.16,141.48l163.11,0.46l81.95-141.02l-81.16-141.48L173.34,137.02L173.34,137.02z"/>
+	</g>
+	<path class="st1" d="M173.34,137.02"/>
+	<g>
+		<polygon class="st0" points="159.83,441.71 67.78,281.23 160.73,121.28 345.73,121.8 437.78,282.27 344.83,442.23 		"/>
+		<path d="M161.02,121.78l184.42,0.52l91.76,159.97l-92.66,159.45l-184.42-0.52L68.36,281.23L161.02,121.78 M160.44,120.78
+			L67.2,281.23l92.34,160.97l185.58,0.52l93.24-160.45L346.02,121.3L160.44,120.78L160.44,120.78z"/>
+	</g>
+</g>
+<g id="Laag_1">
+	<g>
+		<polygon points="172.84,419.03 91.97,278.04 173.63,137.52 336.16,137.97 417.03,278.96 335.37,419.48 		"/>
+		<path class="st0" d="M173.92,138.02l161.95,0.45l80.58,140.48l-81.37,140.03l-161.95-0.45L92.55,278.05L173.92,138.02
+			 M173.34,137.02L91.39,278.04l81.16,141.48l163.11,0.46l81.95-141.02l-81.16-141.48L173.34,137.02L173.34,137.02z"/>
+	</g>
+	<path class="st1" d="M173.34,137.02"/>
+	<g>
+		<path d="M161.02,121.78l184.42,0.52l91.76,159.97l-92.66,159.45l-184.42-0.52L68.36,281.23L161.02,121.78 M160.44,120.78
+			L67.2,281.23l92.34,160.97l185.58,0.52l93.24-160.45L346.02,121.3L160.44,120.78L160.44,120.78z"/>
+	</g>
+</g>
+<g id="Laag_2">
+	<g id="Laag_2_00000099660111276141560060000017486394398159134869_">
+		<polygon class="st2" points="141.72,257.68 188.65,236.91 202.16,221.49 228.44,212.6 254.31,185.55 272.76,204.76 274.3,231.22 
+			347.9,342.45 300.96,340.4 231.57,347.26 221.38,329.81 235.1,298.06 226.87,275.32 176.5,281.5 158.39,275.32 		"/>
+	</g>
+	<g id="Laag_3">
+		<line class="st2" x1="221.38" y1="329.91" x2="231.57" y2="347.36"/>
+		<line class="st2" x1="300.96" y1="340.49" x2="221.38" y2="329.91"/>
+		<line class="st2" x1="300.96" y1="340.49" x2="348" y2="342.45"/>
+		<line class="st2" x1="300.96" y1="340.49" x2="338.98" y2="328.93"/>
+		<polyline class="st2" points="316.64,295.22 300.96,340.49 336.73,418.14 348,342.45 338.98,328.93 		"/>
+		<line class="st2" x1="235.1" y1="298.16" x2="316.64" y2="295.22"/>
+		<polyline class="st2" points="300.96,340.49 231.57,347.36 172.55,419.52 300.96,340.49 235.1,298.16 		"/>
+		<line class="st2" x1="226.87" y1="275.23" x2="316.64" y2="295.22"/>
+		<line class="st2" x1="226.87" y1="275.23" x2="274.3" y2="231.32"/>
+		<line class="st2" x1="274.3" y1="231.32" x2="271.17" y2="285.03"/>
+		<line class="st2" x1="228.44" y1="212.7" x2="274.3" y2="231.32"/>
+		<line class="st2" x1="228.44" y1="212.7" x2="272.73" y2="204.86"/>
+		<line class="st2" x1="202.17" y1="221.52" x2="226.87" y2="275.23"/>
+		<line class="st2" x1="202.17" y1="221.52" x2="274.3" y2="231.32"/>
+		<line class="st2" x1="188.65" y1="236.81" x2="176.5" y2="281.5"/>
+		<line class="st2" x1="141.8" y1="257.78" x2="182.57" y2="259.15"/>
+		<line class="st2" x1="188.65" y1="236.81" x2="226.87" y2="275.23"/>
+	</g>
+	<line class="st2" x1="348" y1="342.45" x2="376.22" y2="350.18"/>
+	<polyline class="st2" points="336.73,418.14 231.57,383.2 231.57,419.52 	"/>
+	<path class="st2" d="M287.49,222.01"/>
+</g>
+<g id="Laag_3_00000041998732973343228470000017977448654362896517_">
+	<circle class="st1" cx="184.5" cy="177.5" r="24"/>
+	<ellipse cx="193.5" cy="179.25" rx="16" ry="18.75"/>
+	<polygon class="st3" points="263.36,160.97 259.15,159.74 255.75,162.51 255.62,158.12 251.94,155.74 256.07,154.26 257.19,150.02 
+		259.88,153.5 264.26,153.26 261.78,156.88 	"/>
+	<polygon class="st3" points="307.02,194.86 302.3,194.33 299.19,197.92 298.24,193.27 293.86,191.42 297.99,189.07 298.4,184.34 
+		301.9,187.54 306.53,186.47 304.57,190.79 	"/>
+	<polygon class="st3" points="316.58,153.37 312.56,153.6 310.47,157.04 309.01,153.29 305.09,152.36 308.21,149.81 307.88,145.8 
+		311.27,147.98 314.98,146.43 313.95,150.32 	"/>
+	<polygon class="st3" points="157.4,321.55 151.95,321.61 148.91,326.13 147.17,320.97 141.93,319.47 146.3,316.22 146.1,310.78 
+		150.55,313.93 155.66,312.06 154.04,317.26 	"/>
+	<polygon class="st3" points="372.58,269.17 378.12,270.76 382.56,267.09 382.76,272.85 387.62,275.94 382.21,277.91 380.77,283.49 
+		377.22,278.95 371.47,279.31 374.69,274.53 	"/>
+	<polygon class="st3" points="355.59,220.33 357.25,214.08 353.05,209.17 359.5,208.82 362.88,203.3 365.2,209.33 371.49,210.84 
+		366.48,214.92 366.99,221.36 361.56,217.85 	"/>
+	<path class="st1" d="M67.2,281.23"/>
+	<path class="st1" d="M91.39,278.04"/>
+	<path class="st1" d="M159.54,442.2"/>
+	<path class="st1" d="M173.68,418.14"/>
+	<path class="st1" d="M345.11,442.73"/>
+	<path class="st1" d="M334.52,417.41"/>
+	<path class="st1" d="M438.35,282.27"/>
+	<path class="st1" d="M415.93,278.5"/>
+	<path class="st1" d="M346.02,121.3"/>
+	<path class="st1" d="M336.45,137.48"/>
+	<path class="st1" d="M173.5,138.5"/>
+	<path class="st1" d="M160.44,120.78"/>
+	<polygon class="st4" points="191.33,360.27 187.08,358.84 183.5,361.54 183.54,357.05 179.87,354.48 184.15,353.13 185.47,348.85 
+		188.07,352.5 192.55,352.43 189.88,356.03 	"/>
+	<polygon class="st4" points="201.82,310.81 197.55,312.32 196.38,316.7 193.62,313.11 189.1,313.35 191.66,309.62 190.03,305.39 
+		194.38,306.67 197.89,303.82 198.02,308.34 	"/>
+</g>
+<g id="Laag_4">
+	<path class="st4" d="M397.5,140.5"/>
+</g>
+</svg>
+</a>
+</div>
 
 <div class="social-buttons">
   <a href="" class="social"><i class="fab fa-linkedin"></i> | linkedin</a>
